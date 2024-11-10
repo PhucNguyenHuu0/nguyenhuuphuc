@@ -48,15 +48,15 @@
             @Html.DisplayFor(modelItem => item.Donvitinh)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Anh)
+            <img src="@item.Anh" style="height:100px; width:100px" />
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Loaihang.Tenloai)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Mahang }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Mahang }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Mahang })
+            @Html.ActionLink("Edit", "Edit", new { id=item.Mahang.Trim() }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Mahang.Trim() }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Mahang.Trim() })
         </td>
     </tr>
 }

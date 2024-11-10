@@ -18,16 +18,7 @@ namespace NHPhuc_QuanLyBanHang
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                 namespaces: new[] { "NHPhuc_QuanLyBanHang.Controllers" });
-            routes.MapRoute(
-                 name: "Login",
-                 url: "Login",
-                  defaults: new { controller = "Login", action = "Index" });
-
-
-            routes.MapRoute(
-                name: "Dashboard",
-                url: "Home/Dashboard",
-                defaults: new { controller = "Home", action = "Dashboard" });
+           
 
          
         }

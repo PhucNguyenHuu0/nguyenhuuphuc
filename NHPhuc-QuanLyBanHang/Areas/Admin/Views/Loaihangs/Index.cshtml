@@ -24,9 +24,9 @@
             @Html.DisplayFor(modelItem => item.Tenloai)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Maloai }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Maloai }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Maloai })
+            @Html.ActionLink("Edit", "Edit", new { id=item.Maloai.Trim() }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Maloai.Trim() }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Maloai.Trim() })
         </td>
     </tr>
 }
